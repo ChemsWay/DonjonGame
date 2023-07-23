@@ -1,0 +1,103 @@
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    font-weight: bold;  
+    background-color: grey;  
+}
+
+body{
+    background-color: #11162a;
+    color: gold;    
+}
+
+/* img#cadre-left{
+    transform: rotate(90deg);
+} */
+img#cadre-right{
+    transform: rotate(180deg);
+}
+
+img#cadre-bottom{
+    transform: rotate(180deg)
+}
+
+#img-titre{    
+    width:400px;
+    height: 200px;
+}
+
+#cadre-top, #cadre-bottom{
+    width: 300px;
+    height: 100px;
+}
+
+#cadre-left,#cadre-right{
+    width: 100px;
+    height: 300px;
+}
+
+div.table-v{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    align-items:center; 
+}
+div.table-h{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center; 
+}
+
+.fleche{
+    width: 35px;
+    height: 65px;
+    background:url("../img/fleche.png");
+    background-size:cover;
+}
+#fl-haut{
+    margin-top: 1px;
+}
+#fl-bas{
+    transform: rotate(180deg);
+}
+#fl-droite{
+    transform: rotate(270deg);
+    margin-right:30px;
+}
+#fl-gauche{
+    transform: rotate(90deg);
+    margin-left:30px;
+}
+
+#vue-h{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#bouton-v{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#bouton-h{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    
+    font-family:"Endor Alt";
+    text-align: center;
+    font-size: 10rem;
+    font-weight: normal;
+    color: #f7ce3a;
+    /* border: #f7ce3a solid 2px; */
+}
