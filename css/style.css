@@ -1,21 +1,64 @@
 
 td {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #000;
-    text-align: center;
+    text-align:center; 
+    vertical-align: middle; 
     font-weight: bold;  
-    background-color: grey;  
+    background-color:#c8d2d8; 
+}
+
+#boiteDia{
+    display:block; 
+    position: fixed;  
+    
+    width: 100%;
+    height: 100%;   
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+
+}
+#AccueilDia{
+    
+    height: 50%;
+    margin: 10% 15%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: solid #f7ce3a;
+
+    font-family:"Endor Alt";
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #f7ce3a;
+
+}
+#closeDia{
+    display:flex;      
+    background-color: transparent ;
+    color: #f7ce3a;             
+    font-size: 1.5rem; 
+    margin-top: 2px;  
+    margin-right: 2px;
+}
+#quitDia, #contDia{
+    
+    font-family:"Endor Alt";
+    background-color: transparent ;
+    
+    color: #f7ce3a;             
+    font-size: 2.5rem;       
+    margin: 5px;
+
 }
 
 body{
+    
     background-color: #11162a;
     color: gold;    
 }
 
-/* img#cadre-left{
-    transform: rotate(90deg);
-} */
+
 img#cadre-right{
     transform: rotate(180deg);
 }
@@ -52,6 +95,14 @@ div.table-h{
     align-items: center; 
 }
 
+#btn-grp{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center; 
+
+}
+
 .fleche{
     width: 35px;
     height: 65px;
@@ -64,11 +115,11 @@ div.table-h{
 #fl-bas{
     transform: rotate(180deg);
 }
-#fl-droite{
+#fl-gauche{
     transform: rotate(270deg);
     margin-right:30px;
 }
-#fl-gauche{
+#fl-droite{
     transform: rotate(90deg);
     margin-left:30px;
 }
@@ -76,28 +127,42 @@ div.table-h{
 #vue-h{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 #bouton-v{
-    display: flex;
+    display:flex;    
     flex-direction:column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin-left:15px ;
 }
 #bouton-h{
     display: flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;
+    
 }
 
 h1{
     
     font-family:"Endor Alt";
     text-align: center;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: normal;
     color: #f7ce3a;
-    /* border: #f7ce3a solid 2px; */
+    /* border: #f7ce3a solid 2px;      */
+    margin-top: 0px;
+}
+
+h3{
+    font-family:"Endor Alt";
+    text-align:start; 
+    font-size: 4rem;
+    font-weight: normal;
+    color: #f7ce3a;
+    margin-top: 2px;
+
 }

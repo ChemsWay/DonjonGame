@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+        
     <script src="./js/script.js" defer></script>
     
 </head>
-<body >
-    
+<body >    
     <header>
-
+        <div id="boiteDia">
+            <div id="AccueilDia">
+                <input id="closeDia" type="button" value="X">
+                <h2 id="titreDia">Bienvenu dans le jeu: Le Mysterieux Donjon</h2>                
+                <p id="texteDia">votre mission est de collecter les tresors contenu dans chaque niveau, en evitant les monstres.<br>Attention! Le nombre des monstres augmentent
+                    au fure et a mesure que vous avancez dans les niveaux, et chaque monstre a un pouvoir destructeur different des autres
+                </p>
+                <input id="quitDia" type="button" value="Quitter">
+                <input id="contDia" type="button" value="Continuer">                
+            </div>
+        </div>              
+        <h1>Le Mysterieux Donjon</h1>
     </header>
     <body>
+        
         <div id="vue-h">
-            <div class="table-v">                
-                <img id="img-titre" src="./img/cadre-nom.png" alt="titre">
-                <img id="cadre-top" src="./img/cadre-top.png" alt="haut-cadre">               
+            <div class="table-v">                           
+                <!-- <img id="img-titre" src="./img/cadre-nom.png" alt="titre">                               -->
+                <img id="cadre-top" src="./img/cadre-top.png" alt="haut-cadre"> 
+                
                 <div class="table-h">
                     <img id="cadre-left" src="./img//cadre-left.png" alt="gauche-cadre">              
                     <table id="table">
@@ -27,17 +42,27 @@
                 </div>                
                 <img id="cadre-bottom" src="./img/cadre-top.png" alt="bas-cadre">
             </div>  
-            <div id="bouton-v">
-                <h1>Le Mysterieux Donjon</h1>
-                <input type="button"  class="fleche" id="fl-haut">
-                <div id="bouton-h">
-                    <input type="button"  class="fleche" id="fl-droite">
-                    <input type="button"  class="fleche" id="fl-gauche">
+            <div id="bouton-v">                
+                <div id="niv-h">
+                    <h3 >Niveau: <span id="level">1</span></h3>
+                    <h3 >Score: <span id="score">0</span></h3>
+                    <h3>Vie: <span id="vie">100</span></h3>
+                </div> 
+                <div id="btn-grp">
+                    <input type="button"  class="fleche" id="fl-haut">
+                    <div id="bouton-h">
+                        <input type="button"  class="fleche" id="fl-gauche">
+                        <input type="button"  class="fleche" id="fl-droite">                    
+                    </div>
+                    <input type="button"  class="fleche" id="fl-bas">     
+
                 </div>
-                <input type="button"  class="fleche" id="fl-bas">                
+                           
             </div>    
 
         </div>
+
+        
             
     </body>
     <footer>
